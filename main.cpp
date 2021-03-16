@@ -10,7 +10,7 @@ int main(){
     int ans = 0;
     for (int i = 0; i < 8; i++)
     {
-        int x = (int)rand*4+1;
+        int x = (int) rand()*4+1;
         ans+=x*temp;
         temp*=10;
     }

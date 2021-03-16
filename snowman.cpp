@@ -16,7 +16,7 @@ div3 = 100000,
 div4 = 10000,
 div5 = 1000,
 div6 = 100,
-div7 = 10,
+div7 = 10, 
 };
 
 
@@ -52,16 +52,16 @@ string ariel::snowman(int num){
         switch (a)
         {
         case A:
-            snow8 ="_===_\n";
+            snow8 =" _===_\n";
             break;
         case B:
-            snow8 =" ___ \n.....\n";
+            snow8 ="  ___ \n .....\n";
             break;
         case C:
-            snow8 ="_\n /_\\\n";
+            snow8 ="   _\n  /_\\\n";
             break;
         case D:
-            snow8 =" ___ \n (_*_)\n";
+            snow8 ="  ___ \n (_*_)\n";
             break;
         }
         
@@ -190,13 +190,13 @@ string ariel::snowman(int num){
             temp = snow8 + snow4 + snow7 + snow6 + snow5 + snow3 + "\n" + " " + snow2 +"\n"+ snow1;
         }
         else if(e==2&&f!=2){
-            temp = snow8 + snow4 + snow7 + snow6 + snow5 + "\n" + snow2 + snow3 + "\n"  + snow1;
+            temp = snow8 + snow4 + snow7 + snow6 + snow5 + "\n" + " " +snow2 + snow3 + "\n"  + snow1;
         }
         else if(f==2&&e!=2){
             temp = snow8 + " " + snow7 + snow6 + snow5 + snow3 + "\n"  + snow4 + snow2 +"\n"  + snow1;
         }
         else{
-            temp = snow8  +" " + snow7 + snow6 + snow5 + " " + snow4 + snow2 + snow3 + "\n" + snow1;
+            temp = snow8  +" " + snow7 + snow6 + snow5 + " " + "\n" + snow4 + snow2 + snow3 + "\n" + snow1;
         }
        cout <<temp<< endl;
     }
